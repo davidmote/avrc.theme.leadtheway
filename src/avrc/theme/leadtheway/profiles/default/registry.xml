@@ -2,11 +2,11 @@
 
     <!-- collective.xdv settings -->
     <record interface="collective.xdv.interfaces.ITransformSettings" field="rules">
-        <value>python://avrc.theme.leadtheway/rules/default.xml</value>
+        <value>python://avrc.theme.leadtheway/rules/override.xml</value>
     </record>
 
     <record interface="collective.xdv.interfaces.ITransformSettings" field="theme">
-        <value>python://avrc.theme.leadtheway/themes/default.html</value>
+        <value>python://avrc.theme.leadtheway/themes/override.html</value>
     </record><!--
     <record interface="collective.xdv.interfaces.ITransformSettings" field="absolute_prefix">
         <value>/++resource++avrc.ari.theme.static</value>
