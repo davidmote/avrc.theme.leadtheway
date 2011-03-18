@@ -1,3 +1,0 @@
-avrc
-avrc.theme
-avrc.leadtheway
