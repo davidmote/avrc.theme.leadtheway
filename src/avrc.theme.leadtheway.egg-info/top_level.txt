@@ -1,1 +1,1 @@
-avrc
+avrc.theme
