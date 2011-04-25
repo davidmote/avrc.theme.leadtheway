@@ -18,6 +18,7 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
- <browser:resourceDirectory
+  <browser:resourceDirectory
       name="avrc.theme.leadtheway.static" directory="static" />
+
 </configure>
