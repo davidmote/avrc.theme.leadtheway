@@ -26,7 +26,7 @@
 					panelbtnshover:false,
 					circular:true
 			});
-
+			
 		$(".manifesto").click(function () {$("#manifesto-popup").css("display","block");$(this).addClass("highlight");});
 		$(".manifesto-close").click(function () {$(this).parent().css("display","none");$(".manifesto").removeClass("highlight");});
 		$("#manifesto-popup").click(function () {$(this).css("display","none");$(".manifesto").removeClass("highlight");});		
@@ -48,7 +48,7 @@
 				<li><a href="#" class="manifesto">Manifesto</a></li>
 				<li><a href="#" class="leaders">Leaders</a></li>
 				<li><a href="theplan.html" class="the-plan">The Plan</a></li>
-				<li><a href="stopby.html" class="stop-by">Stop By</a></li>
+				<li><a href="stopby.html" class="stop-by highlight">Stop By</a></li>
 				<li><a href="sayhi.html" class="say-hi">Say Hi</a></li>
 			</ul>
 			
@@ -101,19 +101,45 @@
 		<div id="content">
 						
 			<div id="intro">
-				<h2 id="section-header">Give us a shout</h2>
-				<div class="col-a">
-					<img src="./images/big-blue.png" align="left" alt="blue arrow" style="margin:0px 20px 50px 0px;">
-					<p>We asked you a question, so it’s only fair that you can ask us something too.</p>
-					<p>Drop us a line, leave us a message, tweet us or update us. Any way you do it, we’ll be sure to get back to you.</p>
+				<h2 id="section-header">stop by</h2>
+					<div class="col-a">
+						<p>This is headquarters for answering the question “Would you or wouldn’t you take an HIV test?”</p>
+						<p>If you answer “yes,” we can administer a free, confidential HIV Rapid Test* right then and there (assuming you’ve made an appointment, of course).</p>
+						<p>If you answer “no,” we’ve got a handy survey for you to fill out. It’s on an iPad, which almost makes it fun.</p>
+						<p>And if you just can’t stand the thought of traveling all the way to Park & University, check out <a href="sayhi.html">when we’ll be in your neighborhood next</a> with our mobile HQ.</p>
+						<p><a class="popup" href="#schedule-window">*Yeah, read this.</a></p>
+					</div>
+					
+					<div class="col-b">
+						<a href=""><div style="" class="schedule-button"><h3>Schedule an <span class="white">Appointment</span> Now!</h3> <h4 class="go">Go</h4></div></a>
+						<p class="green" style="font-weight:bold;"><em>To get the free, confidential HIV Rapid Test, please show proof of residence in 92103 or 92104. <a class="popup" href="#schedule-window">(more)</a></em></p>
+						
+						<div style="display:none;">
+							<div id="schedule-window" class="more-window">
+								<p>“Lead the Way’s research is focused on the residents of 92103 + 92104. We are making the HIV Rapid Test (the finger prick test for HIV antibodies) available for free to all adults 18 – 65 who can show proof of residence in one of these two zip codes.</p>
+								<p>However, anyone who wants to take the survey or take the Early Test (a full blood draw that tests for the presence of the HIV virus) may do so.</p>
+							</div>
+						</div>
+					</div>
+			</div>
+			
+			<div class="grey-box">
+				<div class="white-box" style="width:93%;overflow:hidden;margin-bottom:20px;">
+					<iframe class="left" width="520" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=san+diego+92104&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=57.945758,93.515625&amp;ie=UTF8&amp;hq=&amp;hnear=San+Diego,+California+92104&amp;ll=32.747579,-117.132368&amp;spn=0.021657,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+					<h3 class="left" style="margin-left:25px;line-height:1.25em;"><a href="http://maps.google.com/maps?saddr=&daddr=San+Diego+CA+92103" target="_blank">Get me<br/> directions.<br><img src="./images/arrow-left.png" alt="Get Directions"></a></h3>
 				</div>
+			
 				
-				<div class="col-b">
-				<p>address</p>
-				<p>hours</p>
-				<p>phone</p>
-				<p>email</p>
-				</div>
+				<p class="left thirds">
+					<em>address</em><br>
+					1234 Somewhere Dr.<br>
+					San Diego, CA 92104			
+				</p>
+				<p class="left thirds"><em>parking</em><br/>
+				Lorem Ipsum<br/>
+				Metered and unmetered street parking is also available in the surrounding area.
+				</p>
+				<p class="left thirds"><em>dates & times</em></p>
 			</div>
 		</div>		
 
@@ -123,7 +149,7 @@
 			<a href="#" style="margin-left:0px;"><img src="./images/avrc-logo.png"></a>
 			<a href="#"><img src="./images/earlytest.png"></a>
 			<img src="./images/mini-hand.png" class="left">
-			<a href="#" class="media-kit">Media Kit<span style="color:#fff;"> + </span>Resources</a>
+			<a href="mediakit.html" class="media-kit">Media Kit<span style="color:#fff;"> + </span>Resources</a>
 			<div class="social-links">
 				<a href="#" class="twitter">Twitter</a><span class="line-black"></span> 
 				<a href="#" class="facebook">Facebook</a><span class="line-black"></span>

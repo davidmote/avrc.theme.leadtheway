@@ -17,6 +17,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> 
 	<script type="text/javascript" src="./scripts/jquery.sliderkit.1.5.1.js"></script>
 	<script type="text/javascript" src="./scripts/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="./scripts/jquery.mousewheel-3.0.4.pack.js"></script>	
 	<script type="text/javascript" src="./scripts/jquery.jscrollpane.min.js"></script>
 
 	<script type="text/javascript">
@@ -26,19 +27,19 @@
 					panelbtnshover:false,
 					circular:true
 			});
-
+			
 		$(".manifesto").click(function () {$("#manifesto-popup").css("display","block");$(this).addClass("highlight");});
 		$(".manifesto-close").click(function () {$(this).parent().css("display","none");$(".manifesto").removeClass("highlight");});
-		$("#manifesto-popup").click(function () {$(this).css("display","none");$(".manifesto").removeClass("highlight");});		
-					
-		jQuery("a.popup").fancybox({'padding':0});
+		$("#manifesto-popup").click(function () {$(this).css("display","none");$(".manifesto").removeClass("highlight");});
+		
+		jQuery('a.popup').fancybox({'padding':0});
 		
 		jQuery('.scroll-pane').jScrollPane();
 
 		});
 	</script>
   </head>
-  <body id="stopby">
+  <body id="home">
 
     <div id="container">
     
@@ -61,7 +62,7 @@
 			<p>By participating in this study, you can help us better overcome barriers to HIV testing. Because if we can get everyone to test , we can get treatment to everyone who wants it. And effective treatment can reduce the chances of HIV transmission by up to 90%. That’s how we stop HIV in its tracks.</p>
 			<p>So, would you or wouldn’t you?</p>
 			
-			<a href="#" class="manifesto-schedule">give us your answer</a>
+			<a href="stopby.html" class="manifesto-schedule">give us your answer</a>
 			
 			</div>
 
@@ -99,36 +100,49 @@
 		</div><!-- End of Header -->
 		
 		<div id="content">
-						
-			<div id="intro">
-				<h2 id="section-header">Give us a shout</h2>
-				<div class="col-a">
-					<img src="./images/big-blue.png" align="left" alt="blue arrow" style="margin:0px 20px 50px 0px;">
-					<p>We asked you a question, so it’s only fair that you can ask us something too.</p>
-					<p>Drop us a line, leave us a message, tweet us or update us. Any way you do it, we’ll be sure to get back to you.</p>
-				</div>
-				
-				<div class="col-b">
-				<p>address</p>
-				<p>hours</p>
-				<p>phone</p>
-				<p>email</p>
-				</div>
+			<h2>Take the test or take the survey.</h2>
+			
+			<ul id="steps">
+				<li><a href="stopby.html">
+					<h3>1. stop by</h3>
+					<p>We’ve set up shop at the corner of University and Park.  Come on in and take the test or take the survey. We only need 15 minutes and participation is free and confidential.</p>
+					<div class="button1"><span>Schedule your test</span></div>
+					</a>
+				</li>
+				<li><a href="sayhi.html">
+					<h3>2. say hi</h3>
+					<p>Our mobile team is headed into neighborhoods all over 92103 + 92104 to offer the test and the survey.</p>
+					<div class="button1"><span>see where we'll be next</span></div>
+					</a>
+				</li>
+				<li>
+					<h3>3. tell others</h3>
+					<p>We will succeed if you get your friends and neighbors to check us out.</p>
+					<div class="social-links">
+						<a href="#" class="twitter">Twitter</a><span class="line-white"></span> 
+						<a href="#" class="facebook">Facebook</a><span class="line-white"></span>
+						<a href="#" class="email">Email</a>
+					</div>
+				</li>
+				<li><a href="theplan.html">
+					<h3>4. learn more</h3>
+					<p>Want to know what we’re up to and why? We’ve got answers (and a video).</p>
+					<div class="button2"><span>watch/read</span></div>
+					</a>					
+				</li>
+			</ul>
+			
+			<div style="clear:both;position:relative;z-index:1000;padding:10px 0px;">
+				<a href="http://maps.google.com/maps?saddr=&daddr=San+Diego+CA+92103" target="_blank"><img src="./images/home-map.png" alt="Location of Lead the Way Test Center"></a>
 			</div>
 		</div>		
 
-		
-		
+
 		<div id="footer">
+			<a href="mediakit.html" class="media-kit">Media Kit<span style="color:#fff;"> + </span>Resources</a>
 			<a href="#" style="margin-left:0px;"><img src="./images/avrc-logo.png"></a>
 			<a href="#"><img src="./images/earlytest.png"></a>
-			<img src="./images/mini-hand.png" class="left">
-			<a href="#" class="media-kit">Media Kit<span style="color:#fff;"> + </span>Resources</a>
-			<div class="social-links">
-				<a href="#" class="twitter">Twitter</a><span class="line-black"></span> 
-				<a href="#" class="facebook">Facebook</a><span class="line-black"></span>
-				<a href="#" class="email">Email</a>
-			</div>
+			<img src="./images/sean.png" class="left" style="position:relative;margin-left:10px;z-index:100;">
 			<div id="bar"><a href="">Espanol</a><a href="contact.html">Give us a Shout</a></div>
 		</div>
     
