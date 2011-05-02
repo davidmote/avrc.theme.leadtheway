@@ -56,13 +56,12 @@
             <append css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>
             <copy css:if-content="#kml-content-viewlet" css:content="#kml-content-viewlet" css:theme="#main-content .col-b
             " />
-            <copy css:content=".eventDetails" css:theme="#main-content .col-b"/>
-            <copy css:if-content="#portal-column-two" css:content="#portal-column-two" css:theme="#main-content .col-b"/>            
+            <append css:content=".eventDetails" css:theme="#main-content .col-b"/>
+            <append css:if-content="#portal-column-two" css:content="#portal-column-two" css:theme="#main-content .col-b"/>            
             <drop css:theme=".grey-box"  />
     </rules>
 
 
-css:if-content="#default-cgmap"
     <copy css:content="#default-cgmap" css:theme=".grey-box ul" />
 
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-topic')]">
