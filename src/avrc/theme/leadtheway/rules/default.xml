@@ -83,7 +83,7 @@
             <copy css:content="div#content-core" css:theme=".grey-box ul" />
         </rules>
         <rules if-content="//*[@id='default-cgmap']">
-            <copy css:content="div#default-cgmap" css:theme=".grey-box ul" />
+            <replace css:content="div#default-cgmap" css:theme=".grey-box ul" />
         </rules>
     </rules>
 
