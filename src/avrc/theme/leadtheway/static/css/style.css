@@ -27,7 +27,7 @@ dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{paddi
 div.managePortletsLink, a.managePortletsFallback{background:inherit;position:relative;z-index:9999}
 #content-views,#edit-bar,#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd,#contentActionMenus,#contentActionMenus dl.actionMenu.activated dd{background-color:#60BB46}
 #contentActionMenus dl.actionMenu.activated dd{border-bottom-color:#60BB46}
-
+.eventDetails{margin 1em 1em 1em 1em}
 /* personal tools */
 #portal-personaltools{
     margin-top:-25px;
