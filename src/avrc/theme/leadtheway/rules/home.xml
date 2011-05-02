@@ -44,6 +44,9 @@
     <replace css:content="#content h1.documentFirstHeading" css:theme="#main-content h2"/>
 
     <replace css:theme="#steps" css:content="#portal-column-two"/>
+
+    <copy css:content="#portal-siteactions" css:theme="#bar" />
+
 <!-- 
 
   <drop theme="//*[@lang='en']" if-content="/html[@lang!='en']" />;
