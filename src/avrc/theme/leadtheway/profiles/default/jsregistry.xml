@@ -8,8 +8,8 @@
         compression="safe"
         cookable="True"
         enabled="True"
-        expression=""
         inline="False"
+        expression="request/HTTP_X_XDV | nothing"
     />
 
     <javascript
@@ -18,8 +18,8 @@
         compression="safe"
         cookable="True"
         enabled="True"
-        expression=""
         inline="False"
+        expression="request/HTTP_X_XDV | nothing"
     />
     
     <javascript
@@ -28,8 +28,8 @@
         compression="safe"
         cookable="True"
         enabled="True"
-        expression=""
         inline="False"
+        expression="request/HTTP_X_XDV | nothing"
     />
 
 
@@ -39,8 +39,8 @@
         compression="safe"
         cookable="True"
         enabled="True"
-        expression=""
         inline="False"
+        expression="request/HTTP_X_XDV | nothing"
     />
 
 
@@ -50,89 +50,19 @@
         compression="safe"
         cookable="True"
         enabled="True"
-        expression=""
         inline="False"
+        expression="request/HTTP_X_XDV | nothing"
+
     />
 
     <javascript
         id="++resource++avrc.theme.leadtheway.static/scripts/jquery.slideshow.js" 
         cacheable="True"
-        compression="safe"
-        cookable="True"
+        compression="none"
+        cookable="False"
         enabled="True"
-        expression=""
         inline="True"
+        expression="request/HTTP_X_XDV | nothing"
     />
-<!-- 
-
-    <javascript
-        id="++resource++avrc.theme.leadtheway.static/scripts/jquery.mousewheel.min.js" 
-        cacheable="True"
-        compression="safe"
-        cookable="True"
-        enabled="True"
-        expression=""
-        inline="False"
-    />
-    
-    <javascript
-        id="++resource++avrc.theme.leadtheway.static/scripts/jquery.easing.1.3.min.js" 
-        cacheable="True"
-        compression="safe"
-        cookable="True"
-        enabled="True"
-        expression=""
-        inline="False"
-    />
-
-
-
-    
-    <javascript
-        id="++resource++avrc.theme.leadtheway.static/scripts/jquery.cluetip.js" 
-        cacheable="True"
-        compression="safe"
-        cookable="True"
-        enabled="True"
-        expression=""
-        inline="False"
-    />
-
-    
-
-    
-    <javascript
-        id="++resource++avrc.theme.leadtheway.static/scripts/jquery.easing-1.3.pack.js" 
-        cacheable="True"
-        compression="safe"
-        cookable="True"
-        enabled="True"
-        expression=""
-        inline="False"
-    />
-    
-    <javascript
-        id="++resource++avrc.theme.leadtheway.static/scripts/jquery.fancybox-1.3.4.js" 
-        cacheable="True"
-        compression="safe"
-        cookable="True"
-        enabled="True"
-        expression=""
-        inline="False"
-    />
-
-
-    <javascript
-        id="++resource++avrc.theme.leadtheway.static/scripts/jquery.ui.totop.js" 
-        cacheable="True"
-        compression="safe"
-        cookable="True"
-        enabled="True"
-        expression=""
-        inline="False"
-    />
- -->
-
-
 
 </object>

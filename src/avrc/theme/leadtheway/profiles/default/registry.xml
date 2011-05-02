@@ -1,14 +1,78 @@
 <registry>
-
     <!-- collective.xdv settings -->
-    <record interface="collective.xdv.interfaces.ITransformSettings" field="rules">
-        <value>python://avrc.theme.leadtheway/rules/home.xml</value>
+    <record
+    interface="collective.xdv.interfaces.ITransformSettings"
+    field="rules">
+        <value>python://avrc.theme.leadtheway/rules/default.xml</value>
     </record>
-
-    <record interface="collective.xdv.interfaces.ITransformSettings" field="theme">
-        <value>python://avrc.theme.leadtheway/themes/home.html</value>
-    </record>
-    <record interface="collective.xdv.interfaces.ITransformSettings" field="absolute_prefix">
+    <record 
+    interface="collective.xdv.interfaces.ITransformSettings" field="absolute_prefix"
+    name="collective.xdv.interfaces.ITransformSettings.absolute_prefix">
         <value>/++resource++avrc.theme.leadtheway.static</value>
     </record>
+    <record field="alternate_themes" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.alternate_themes">
+    <field type="plone.registry.field.List">
+      <value_type type="plone.registry.field.TextLine">
+        <title>Theme</title>
+      </value_type>
+    </field>
+    <value>
+      <element>^/(splash)?(/)?$ python://avrc.theme.leadtheway/themes/splash.html python://avrc.theme.leadtheway/rules/splash.xml
+      ^/front-page(/)?$ python://avrc.theme.leadtheway/rules/home.xml</element>
+    </value>
+  </record>
+  <record field="domains" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.domains">
+    <field type="plone.registry.field.Set">
+      <value_type type="plone.registry.field.TextLine">
+        <title>Domain</title>
+      </value_type>
+    </field>
+    <value>
+      <element>leadthewaysd.com</element>
+      <element>leadthewaysd.org</element>
+      <element>leadthewaysd.net</element>
+      <element>leadthewaysd.info</element>
+      <element>leadthewaysd.us</element>
+      <element>leadtheway.ucsd.edu</element>
+      <element>monkeyisland.ucsd.edu</element>
+    </value>
+  </record>
+  <record field="notheme" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.notheme">
+    <field type="plone.registry.field.Set">
+      <default>
+        <element>^.*/referencebrowser_popup$</element>
+        <element>^.*/manage_(?!translations_form)[^/]+$</element>
+        <element>^.*/manage$</element>
+        <element>^.*/image_view_fullscreen$</element>
+        <element>^.*/emptypage$</element>
+        <element>^.*/error_log(/.*)?$</element>
+        <element>^.*/aq_parent(/.*)?$</element>
+        <element>^.*/portal_javascripts(/.*)?$</element>
+      </default>
+      <description>Specify paths that should not be styled. May use regular expression syntax</description>
+      <required>False</required>
+      <title>Unstyled paths</title>
+      <value_type type="plone.registry.field.TextLine">
+        <title>Path</title>
+      </value_type>
+    </field>
+    <value>
+      <element>^.*/referencebrowser_popup$</element>
+      <element>^.*/manage_(?!translations_form)[^/]+$</element>
+      <element>^.*/manage$</element>
+      <element>^.*/image_view_fullscreen$</element>
+      <element>^.*/emptypage$</element>
+      <element>^.*/error_log(/.*)?$</element>
+      <element>^.*/aq_parent(/.*)?$</element>
+      <element>^.*/portal_javascripts(/.*)?$</element>
+    </value>
+  </record>
+    <record field="enabled" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description>Use this option to enable or disable the theme globally. Note that the options will also affect whether the theme is used when this option is enabled.</description>
+      <title>Enabled</title>
+    </field>
+    <value>True</value>
+  </record>
 </registry>
