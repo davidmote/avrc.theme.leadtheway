@@ -24,12 +24,18 @@ dl.portlet dt, div.portletAssignments div.portletHeader{padding:inherit}
 #content div.documentByLine {display:none}
 #portal-siteactions{font-size:100%}
 dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{padding:inherit;}
-div.managePortletsLink, a.managePortletsFallback{background:inherit;}
+div.managePortletsLink, a.managePortletsFallback{background:inherit;position:relative;z-index:9999}
 #content-views,#edit-bar,#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd,#contentActionMenus,#contentActionMenus dl.actionMenu.activated dd{background-color:#60BB46}
 #contentActionMenus dl.actionMenu.activated dd{border-bottom-color:#60BB46}
 
+/* personal tools */
+#portal-personaltools{
+    margin-top:-25px;
+    background-color:transparent;
+    font-size:100%;
+}
 
-
+#portal-personaltools dd{background:none repeat scroll 0 0 #393636; margin-top:20px}
 
 html {font-size:100.1%;}
 body {font-size:75%;color:#000;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}

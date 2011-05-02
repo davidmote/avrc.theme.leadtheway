@@ -79,7 +79,7 @@
     	</rules>
     </rules>
     <copy css:content="#portal-siteactions" css:theme="#bar" />
-    
+    <append css:content="#portal-personaltools" css:theme="#bar" />
 <!--    
 
 //
