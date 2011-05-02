@@ -38,32 +38,54 @@
     <replace css:content="#content h1.documentFirstHeading" css:theme="#main-content h2"/>
     
     <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-topic')])">
-        <rules if-content="//*[@id='portal-column-two']">   
-            <copy css:content="#parent-fieldname-description" css:theme="#main-content .col-a"/>    
-            <append css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>      
-            <copy css:content="#portal-column-two" css:theme="#main-content .col-b"/>
-        </rules>  
-        <rules if-content="not(//*[@id='portal-column-two'])">
-            <replace css:content="#content" css:theme="#content"/>       
+        <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-event')])">
+            <rules if-content="//*[@id='portal-column-two']">   
+                <copy css:content="#parent-fieldname-description" css:theme="#main-content .col-a"/>    
+                <append css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>      
+                <copy css:content="#portal-column-two" css:theme="#main-content .col-b"/>
+            </rules>  
+            <rules if-content="not(//*[@id='portal-column-two'])">
+                <replace css:content="#content" css:theme="#content"/>       
+            </rules>
+            <drop css:theme=".grey-box"  />
         </rules>
-        <drop css:theme=".grey-box"  />
     </rules>
 
+    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-event')]">
+            <copy css:content="#parent-fieldname-description" css:theme="#main-content .col-a"/>    
+            <append css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>
+            <copy css:if-content="#kml-content-viewlet" css:content="#kml-content-viewlet" css:theme="#main-content .col-b
+            " />
+            <copy css:content=".eventDetails" css:theme="#main-content .col-b"/>
+            <copy css:if-content="#portal-column-two" css:content="#portal-column-two" css:theme="#main-content .col-b"/>            
+            <drop css:theme=".grey-box"  />
+    </rules>
+
+
+css:if-content="#default-cgmap"
+    <copy css:content="#default-cgmap" css:theme=".grey-box ul" />
+
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-topic')]">
+    
+    
         <rules if-content="//*[@id='portal-column-two']">   
             <copy css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>  
             <copy css:content="#portal-column-two" css:theme="#main-content .col-b"/>
         </rules>
+        
         <rules if-content="not(//*[@id='portal-column-two'])">   
             <replace css:content="#parent-fieldname-text" css:theme="#content .col-a"/>
             <drop css:theme=".col-b" />
+            
         </rules>
         <copy css:content="#parent-fieldname-description" css:theme=".grey-box h3"/>
         <drop css:theme="div#content-core div#parent-fieldname-text" />
-        <copy css:content="div#content-core" css:theme=".grey-box ul" />
-<!-- 
-    </rules>
- -->
+        <rules if-content="not(//*[@id='default-cgmap'])">
+            <copy css:content="div#content-core" css:theme=".grey-box ul" />
+        </rules>
+        <rules if-content="//*[@id='default-cgmap']">
+            <copy css:content="div#default-cgmap" css:theme=".grey-box ul" />
+        </rules>
     </rules>
 
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'template-manage-portlets')]">
