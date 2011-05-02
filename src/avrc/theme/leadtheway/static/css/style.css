@@ -80,7 +80,7 @@ background:url(../images/logo.png) no-repeat;text-indent:-9999px;
 #portal-globalnav .selected a{background:#00aeef; color:#fff}
 #portal-globalnav .selected a:hover,
 #portal-globalnav li a.highlight:hover{background:#666666;color:#fff}
-#manifesto-popup{position:relative;float:right; top:190px;left:-130px;width:500px;padding:25px;background:url(../images/blue-transparent.png);z-index:999999;}
+#manifesto-popup{position:absolute;top:190px;margin-left:300px;width:500px;padding:25px;background:url(../images/blue-transparent.png);z-index:999999;}
 /* used to be left:620 */
 #manifesto-popup h4{text-transform:none;}
 #manifesto-popup p{font-size:1.15em;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
