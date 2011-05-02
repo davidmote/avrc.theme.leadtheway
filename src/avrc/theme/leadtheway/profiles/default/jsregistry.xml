@@ -54,15 +54,13 @@
         expression="request/HTTP_X_XDV | nothing"
 
     />
-
     <javascript
         id="++resource++avrc.theme.leadtheway.static/scripts/jquery.slideshow.js" 
         cacheable="True"
         compression="none"
         cookable="False"
         enabled="True"
-        inline="True"
+        inline="False"
         expression="request/HTTP_X_XDV | nothing"
     />
-
 </object>

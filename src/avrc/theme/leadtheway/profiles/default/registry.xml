@@ -13,12 +13,11 @@
     <record field="alternate_themes" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.alternate_themes">
     <field type="plone.registry.field.List">
       <value_type type="plone.registry.field.TextLine">
-        <title>Theme</title>
       </value_type>
     </field>
     <value>
-      <element>^/(splash)?(/)?$ python://avrc.theme.leadtheway/themes/splash.html python://avrc.theme.leadtheway/rules/splash.xml
-      ^/front-page(/)?$ python://avrc.theme.leadtheway/rules/home.xml</element>
+      <element>^/(splash)?(/)?$ python://avrc.theme.leadtheway/themes/splash.html python://avrc.theme.leadtheway/rules/splash.xml</element>
+      <element>^/front-page(/)?$ python://avrc.theme.leadtheway/rules/home.xml</element>
     </value>
   </record>
   <record field="domains" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.domains">
@@ -37,6 +36,7 @@
       <element>monkeyisland.ucsd.edu</element>
     </value>
   </record>
+  
   <record field="notheme" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.notheme">
     <field type="plone.registry.field.Set">
       <default>
@@ -49,14 +49,12 @@
         <element>^.*/aq_parent(/.*)?$</element>
         <element>^.*/portal_javascripts(/.*)?$</element>
       </default>
-      <description>Specify paths that should not be styled. May use regular expression syntax</description>
-      <required>False</required>
-      <title>Unstyled paths</title>
       <value_type type="plone.registry.field.TextLine">
         <title>Path</title>
       </value_type>
     </field>
     <value>
+      <element>^.*/refbrowser_popup$</element>
       <element>^.*/referencebrowser_popup$</element>
       <element>^.*/manage_(?!translations_form)[^/]+$</element>
       <element>^.*/manage$</element>
@@ -67,11 +65,11 @@
       <element>^.*/portal_javascripts(/.*)?$</element>
     </value>
   </record>
+  
     <record field="enabled" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.enabled">
     <field type="plone.registry.field.Bool">
       <default>False</default>
-      <description>Use this option to enable or disable the theme globally. Note that the options will also affect whether the theme is used when this option is enabled.</description>
-      <title>Enabled</title>
+      
     </field>
     <value>True</value>
   </record>
