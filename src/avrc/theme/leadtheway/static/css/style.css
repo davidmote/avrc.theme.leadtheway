@@ -113,17 +113,17 @@ background:url(../images/logo.png) no-repeat;text-indent:-9999px;
 #main-content .grey-box .two-columns li,
 #main-content .grey-box .two-columns div.tileItem{width:100%; overflow:auto; margin-bottom:20px;list-style:none;}
 #main-content .grey-box .two-columns li div,
-#main-content .grey-box .two-columns .tileHeadline{float:left;width:260px;text-transform:none;}
+#main-content .grey-box .two-columns .tileHeadline{position:relative;display:inline;float:left;width:260px;text-transform:none;}
 #main-content .grey-box .two-columns .documentByLine{float:left;clear:left;width:260px;text-transform:none; font-size:1em; padding:10px;}
 #main-content .grey-box .two-columns li div.white-box,
-#main-content .grey-box .two-columns .tileBody{width:480px; float:left; min-height:50px;position:relative; top:-40px;}
+#main-content .grey-box .two-columns .tileBody{width:480px; float:left; min-height:50px;position:relative; top:0px;position:relative;display:inline;}
 #main-content .grey-box .two-columns .tileBody,
 #main-content .white-box{padding:15px 0px 40px 15px;background-color:#fff;}
 #main-content .grey-box #parent-fieldname-text {display:none;}
-#main-content .grey-box .two-columns .tileFooter{position:relative; left:260px; margin-left:40px; top:-65px; width:80px;}
+#main-content .grey-box .two-columns .tileFooter{position:relative; float:right;right:35px;top:-25px;margin-left:40px; top:-65px; width:80px;}
 
 #main-content .grey-box .two-columns .tileFooter a{text-transform:lowercase; font-size:.90em}
-#main-content .grey-box .two-columns .documentByLine {display:block;font-size:0px;}
+#main-content .grey-box .two-columns .documentByLine {display:none;font-size:0px;}
 #main-content .grey-box .two-columns .documentByLine .dtstart,
 #main-content .grey-box .two-columns .documentByLine .location {font-size:12px}
 #main-content .grey-box .two-columns .documentByLine .dtstart{font-weight:bold;display:block;}
