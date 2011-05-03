@@ -13,7 +13,7 @@
                     female python:'female' in image.Subject;
                     group python:'group' in image.Subject;"
                     >
-                        <h3><span tal:replace="python:male and 'He' or female and 'She' or group and 'They'" />
+                        <h3 tal:attributes="class python:male and 'he-would' or female and 'she-would' or 'they-would'" class=""><span tal:replace="python:male and 'He' or female and 'She' or group and 'They'" />
                         <span tal:condition="python:male or female or group" tal:omit-tag="">would.</span>
                         Would you?</h3>
                     </div>
