@@ -14,7 +14,7 @@
                     group python:'group' in image.Subject;"
                     >
                         <h3><span tal:replace="python:male and 'He' or female and 'She' or group and 'They'" />
-                        <span tal:condition="male|female|group" tal:omit-tag="">would.</span>
+                        <span tal:condition="python:male or female or group" tal:omit-tag="">would.</span>
                         Would you?</h3>
                     </div>
                     <div class="leader-select" >

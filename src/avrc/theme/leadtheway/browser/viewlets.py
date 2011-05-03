@@ -29,19 +29,3 @@ class SlideshowViewlet(grok.Viewlet):
         else:
             imageBrains = []
         return imageBrains
-           #  images = []
-#             for brain in imageBrains:
-#                 imgDict={}
-#                 imgDict['url'] = brain.getURL()
-#                 imgDict['name'] = brain['Title']
-#                 imgDict['description'] = brain['Description']
-#                 imgDict['gender'] = 'group'
-#                 if 'female' in brain.Subject:
-#                     imgDict['gender'] = 'female'
-#                 elif 'male' in brain.Subject:
-#                     imgDict['gender'] = 'male'
-#                 
-#                 images.append(brain.getObject())
-#         else:
-#             images=[]
-#         return images

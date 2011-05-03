@@ -3,5 +3,4 @@
   <order manager="plone.portalheader" skinname="*">
     <viewlet name="leadtheway.SlideshowViewlet" insert-before="*"/>
   </order>
-
 </object>
