@@ -11,7 +11,7 @@
                     <span>Next</span>
                 </a>
             </div>
-            <div tal:repeat="image viewlet/slideshowImages" class="sliderkit-panel" style="display:none">
+            <div tal:repeat="image viewlet/slideshowImages" class="sliderkit-panel">
                 <img tal:attributes="src python:image.getURL(); alt string:${image/Title}, {$image/Description}" src="" alt="" />
                 <div class="caption">
                     <div class="would-you" tal:define="male python:'male' in image.Subject; female python:'female' in image.Subject; group python:'group' in image.Subject;">
