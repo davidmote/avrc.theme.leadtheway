@@ -44,4 +44,13 @@
     cacheable="True" compression="safe" conditionalcomment="" cookable="True"
     enabled="False" expression="" id="columns.css" media="screen"
     rel="stylesheet" rendering="link"/>
+
+ <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    id="++resource++avrc.theme.leadtheway.static/css/handheld.css" media="only screen and (max-device-width: 480px)" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    expression="request/HTTP_X_XDV | nothing"
+    />
+
 </object>
