@@ -100,6 +100,16 @@
 
     	</rules>
     </rules>
+    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' template-atct_edit')]">
+    <rules if-content="//li[@id='contentview-view'][contains(@class,'selected')]">
+            <prepend css:theme="#main-content" css:content="#edit-bar" css:if-content="#edit-bar" />    	    
+    	</rules>
+    	<rules if-content="not(//li[@id='contentview-view'][contains(@class,'selected')])">
+            <replace css:theme="#main-content" css:content=".documentEditable" />
+
+    	</rules>
+    </rules>   
+    
     <copy css:content="#portal-siteactions" css:theme="#bar" />
     <append css:content="#portal-personaltools" css:theme="#bar" />
 <!--    
