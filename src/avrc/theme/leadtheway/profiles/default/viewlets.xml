@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.portalheader" skinname="*">
+    <viewlet name="leadtheway.SlideshowViewlet" insert-before="*"/>
+  </order>
+
+</object>

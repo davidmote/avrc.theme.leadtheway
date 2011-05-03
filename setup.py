@@ -28,6 +28,7 @@ setup(name='avrc.theme.leadtheway',
           'setuptools',
           'collective.xdv',
           'xdv>=0.4b3',
+          'five.grok',
 
           # -*- Extra requirements: -*-
       ],
