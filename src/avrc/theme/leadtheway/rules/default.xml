@@ -62,7 +62,6 @@
     </rules>
 
 
-    <copy css:content="#default-cgmap" css:theme=".grey-box ul" />
 
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-topic')]">
     
@@ -84,6 +83,7 @@
         </rules>
         <rules if-content="//*[@id='default-cgmap']">
             <replace css:content="div#default-cgmap" css:theme=".grey-box ul" />
+            <append css:content="div#content div script" css:theme="#main-content .grey-box"/>
         </rules>
     </rules>
 
