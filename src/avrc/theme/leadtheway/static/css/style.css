@@ -57,7 +57,7 @@ em {font-style:italic;}
 #header{margin-bottom:30px;}
 #header #portal-logo{position:absolute;top:0px; width:145px;height:120px;margin:30px 0px 40px 95px; z-index:9999; background:url("/logo.png");text-indent:-9999px;}
 #header #portal-logo img {display: None;}
-/*#portal-logo {display: block !important; } */
+
 /* used to be # logo with
 
 */
