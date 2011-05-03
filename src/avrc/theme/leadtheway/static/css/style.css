@@ -54,10 +54,11 @@ em {font-style:italic;}
 #container {background:none;width:980px;margin:0px auto;}
 
 /*** Header ***/
-#header{margin-bottom:30px; position: relative;}
-#header #portal-logo{position:absolute;top:0px; width:145px;height:120px;margin:30px 0px 40px 95px; z-index:9999; }
+#header{margin-bottom:30px;}
+#header #portal-logo{position:absolute;top:0px; width:145px;height:120px;margin:30px 0px 40px 95px; z-index:9999; background:url("/logo.png"");text-indent:-9999px;}
+#header #portal-logo img {display: None;}
 /* used to be # logo with
-background:url(../images/logo.png) no-repeat;text-indent:-9999px;
+
 */
 
 /* Header: Slideshow */
