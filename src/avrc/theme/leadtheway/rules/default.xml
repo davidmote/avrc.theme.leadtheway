@@ -24,7 +24,8 @@
  
          <!-- Now for the content -->
     <!-- Replace the logo with plone's -->
-   
+    <replace css:content="#slideshow" css:theme="#slideshow" />
+
     <replace css:theme="a.logo" css:content="#portal-logo" />
 
     <replace css:theme="#nav" css:content="#portal-globalnav" />
