@@ -26,7 +26,6 @@
 		            function (e) {
 		                $(this).css("display","none");
 		                $("#portaltab-manifesto a").removeClass("highlight");
-		                e.preventDefault();
 		            }
 		        );
 		        
