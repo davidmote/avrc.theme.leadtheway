@@ -24,7 +24,8 @@ dl.portlet dt, div.portletAssignments div.portletHeader{padding:inherit}
 #content div.documentByLine {display:none}
 #portal-siteactions{font-size:100%}
 dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{padding:inherit;}
-div.managePortletsLink, a.managePortletsFallback{float:right;margin-top:10px;position:relative;z-index:9999}
+/*div.managePortletsLink, a.managePortletsFallback{float:right;margin-top:10px;position:relative;z-index:9999}*/
+div.managePortletsLink, a.managePortletsFallback{display: none;}
 #content-views,#edit-bar,#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd,#contentActionMenus,#contentActionMenus dl.actionMenu.activated dd{background-color:#60BB46}
 #contentActionMenus dl.actionMenu.activated dd{border-bottom-color:#60BB46}
 .eventDetails{margin: 1em 1em 1em 1em;}
@@ -234,7 +235,7 @@ font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;text-al
 .section-front-page h1{margin:0px 0px 13px 27px;color:#000;font-family: "Georgia", Times, serif;font-size:16pt;font-weight:normal;text-transform:none;}
 
 .section-front-page #steps,
-.section-front-page #portal-column-two{color:#fff; overflow:hidden; width: 100%; position: relative;}
+.section-front-page #portal-column-two{color:#fff; overflow:hidden; width: 100%;}
 .section-front-page #steps li,
 .section-front-page #portal-column-two .portletWrapper{float:left;position:relative;padding:20px 25px;width:178px;height:200px;background:#393636;list-style:none;border-left:2px #ffffff solid;}
 .section-front-page #steps li h3,
