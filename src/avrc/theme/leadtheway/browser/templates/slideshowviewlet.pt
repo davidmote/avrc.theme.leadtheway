@@ -23,9 +23,10 @@
                             <br/>
                             <span tal:replace="image/Description">Job Title</span>
                         </div>
-                        <div class="zipcode" tal:define="zip92103 python:'92103' in image.Subject">
+                        <div class="zipcode" tal:define="zip92103 python:'92103' in image.Subject;
+                        zip92104 python:'92104' in image.Subject">
                         <span class="highlight" tal:omit-tag="not:zip92103">92103</span><br/>
-                        <span class="highlight" tal:omit-tag="zip92103">92104</span>
+                        <span class="highlight" tal:omit-tag="not:zip92104">92104</span>
                         </div>
                     </div>
                 </div>
