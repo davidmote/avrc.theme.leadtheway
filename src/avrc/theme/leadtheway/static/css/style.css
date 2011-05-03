@@ -235,6 +235,10 @@ font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;text-al
 
 .section-front-page #steps,
 .section-front-page #portal-column-two{color:#fff; overflow:hidden; width: 100%;}
+@media only screen and (max-device-width: 480px) {
+    .section-front-page #portal-column-two{position: relative; left: 920px;}
+}
+
 .section-front-page #steps li,
 .section-front-page #portal-column-two .portletWrapper{float:left;position:relative;padding:20px 25px;width:178px;height:200px;background:#393636;list-style:none;border-left:2px #ffffff solid;}
 .section-front-page #steps li h3,
@@ -272,6 +276,7 @@ background-image:none; height: auto;padding:0px;line-height:1.5em; font-size:20p
 
 .section-front-page #steps li .button2 span,
 .section-front-page #portal-column-two .portletWrapper:last-child .portletFooter a{margin-right:40px;}
+
 
 .social-links{margin-top:20px;}
 
