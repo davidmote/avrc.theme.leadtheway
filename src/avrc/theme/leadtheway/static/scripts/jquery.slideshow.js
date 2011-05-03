@@ -8,21 +8,25 @@
 		        });
 		        
 		        $("#portaltab-manifesto a").click(
-		            function (){
+		            function (e){
 		                $("#manifesto-popup").css("display","block");
 		                $(this).addClass("highlight");
+		                e.preventDefault();
+		                
 		            }
 		        );
 		        $(".manifesto-close").click(
-		            function () {
+		            function (e) {
 		                $(this).parent().css("display","none");
 		                $("#portaltab-manifesto a").removeClass("highlight");
+		                e.preventDefault();
 		            }
 		        );
 		        $("#manifesto-popup").click(
-		            function () {
+		            function (e) {
 		                $(this).css("display","none");
 		                $("#portaltab-manifesto a").removeClass("highlight");
+		                e.preventDefault();
 		            }
 		        );
 		        
