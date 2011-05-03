@@ -272,7 +272,8 @@ background-image:none; height: auto;padding:0px;line-height:1.5em; font-size:20p
 .section-front-page #portal-column-two .portletWrapper .portletFooter a{margin-right:5px; color:#00AEEF;}
 
 .section-front-page #steps li .button2,
-.section-front-page #portal-column-two .portletWrapper:last-child .portletFooter{float:right;width:230px; margin-left:-25px;text-align:right;background:url(../images/step-footer2.png) no-repeat;}
+.section-front-page #portal-column-two .portletWrapper:last-child .portletFooter,
+.section-front-page #portal-column-two .portletWrapper .portlet-static-4-learn-more .portletFooter{float:right;width:230px; margin-left:-25px;text-align:right;background:url(../images/step-footer2.png) no-repeat;}
 
 .section-front-page #steps li .button2 span,
 .section-front-page #portal-column-two .portletWrapper:last-child .portletFooter a{margin-right:40px;}
