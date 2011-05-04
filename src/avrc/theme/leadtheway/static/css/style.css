@@ -13,9 +13,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader{font-weight:inherit;marg
 .portletTopRight,
 .portletBottomLeft,
 .portletBottomRight{display:none !important;}
-#content p, #content table, #content dl, dl.portlet p, dl.portlet,
-dl.portlet dt, div.portletAssignments div.portletHeader,
-#content dt{margin:auto; font-size:inherit, padding:inherit}
+
 dl.portlet{font-size:inherit;margin:auto;}
 #content a:link, dl.portlet a:link {border-bottom:none;}
 #content a:hover, dl.portlet a:hover{color:inherit !important}
@@ -47,7 +45,7 @@ h5{font-size:1.25em;}
 h6{font-size:1.1em;}
 a, a:link,a:visited{color:#00aeef;text-decoration:none;}
 a img {border:none;}
-p{font-family: "Georgia", Times, serif;font-weight:normal;line-height:1.5em;padding-bottom:15px;font-size:13pt}
+p{font-family: "Georgia", Times, serif;font-weight:normal;line-height:1.5em;padding-bottom:15px}
 p img.top {margin-top:0;}
 em {font-style:italic;}
 
@@ -67,7 +65,7 @@ em {font-style:italic;}
 #header ul{list-style:none;}
 
 /* Header: Caption */
-#header .caption{margin-top:-5px;height:60px;background:#393636;z-index:99999;}
+#header .caption{margin-top:0px;height:60px;background:#393636;z-index:99999;}
 #header .caption div {float:left;}
 #header .caption .would-you {border-right:2px #fff solid;}
 #header .caption .would-you h3{float:left;width:490px;height:60px;background-image:url(../images/wouldyou.png);text-indent:-9999px;}
@@ -101,7 +99,7 @@ em {font-style:italic;}
 #main-content{padding:0px 30px;}
 #main-content #content{overflow: hidden;width:100%;}
 #main-content #content div{font-family:"Georgia",Times,serif;}
-#main-content #content .documentDescription{font-size:1.5em;line-height:1.5em}
+#main-content #content .documentDescription{font-size:1.5em;line-height:1.5em; margin-bottom:1em}
 #main-content #content>div{font-size:1.2em;line-height:1.2em;padding:0px 20px 0px 27px;}
 #main-content #content .documentFirstHeading{padding:0px 20px 0px 27px;}
 #main-content #content .col-a{float:left;width:415px}
@@ -221,7 +219,7 @@ font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-weight:bold;text-al
 #portal-column-two>div.portletWrapper .portletFooter,
 .meet-button .go,
 .schedule-button .go
-{position:absolute; z-index:999; margin-left:320px; top:670px;}
+{position:absolute; z-index:999; margin-left:320px; top:685px;}
 .section-front-page #portal-column-two>div.portletWrapper .portletFooter{top:auto}
 #portal-column-two>div.portletWrapper .portletFooter span,
 #portal-column-two>div.portletWrapper .portletFooter span a,

@@ -16,8 +16,7 @@
       </value_type>
     </field>
     <value>
-      <element>^/(splash)?(/)?$ python://avrc.theme.leadtheway/themes/splash.html python://avrc.theme.leadtheway/rules/splash.xml</element>
-      <element>^/front-page(/)?$ python://avrc.theme.leadtheway/rules/home.xml</element>
+      <element>^/(front-page)?(/)?$ python://avrc.theme.leadtheway/rules/home.xml</element>
     </value>
   </record>
   <record field="domains" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.domains">

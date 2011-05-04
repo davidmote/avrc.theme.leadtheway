@@ -13,7 +13,7 @@
             </div>
             <div tal:repeat="image viewlet/slideshowImages" tal:omit-tag="">
             <div class="sliderkit-panel" tal:define="first repeat/image/start" tal:attributes="style python:first and 'display:block' or 'display:none'">
-                <img tal:attributes="src python:image.getURL(); alt string:${image/Title}, {$image/Description}" src="" alt="" />
+                <img tal:attributes="src python:image.getURL(); alt string:${image/Title}, ${image/Description}" src="" alt="" />
                 <div class="caption">
                     <div class="would-you" tal:define="male python:'male' in image.Subject; female python:'female' in image.Subject; group python:'group' in image.Subject;">
                         <h3 tal:attributes="class python:male and 'he-would' or female and 'she-would' or 'they-would'" class="">
