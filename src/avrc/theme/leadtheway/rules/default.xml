@@ -90,6 +90,7 @@
 
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'template-manage-portlets')]">
         <replace css:theme="#main-content" css:content="#portal-columns" />
+        <drop css:theme="#footer" />
     </rules>
     <rules if-content="//*[@class='documentEditable']">
     	<rules if-content="//li[@id='contentview-view'][contains(@class,'selected')]">
