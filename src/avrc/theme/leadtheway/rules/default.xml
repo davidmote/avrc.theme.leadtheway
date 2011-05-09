@@ -38,7 +38,7 @@
         
     <replace css:content="#content h1.documentFirstHeading" css:theme="#main-content h2"/>
     
-    <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-topic')])">
+    <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), 'template-folder_summary_view')])">
         <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-event')])">
             <rules if-content="//*[@id='portal-column-two']">   
                 <copy css:content="#parent-fieldname-description" css:theme="#main-content .col-a"/>    
@@ -48,11 +48,12 @@
             <rules if-content="not(//*[@id='portal-column-two'])">
                 <replace css:content="#content" css:theme="#content"/>       
             </rules>
+            <append css:if-content="#viewlet-below-content" css:content="#viewlet-below-content" css:theme="#main-content" />
             <drop css:theme=".grey-box"  />
         </rules>
     </rules>
 
-    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-event')]">
+    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'portaltype-event')]">
             <copy css:content="#parent-fieldname-description" css:theme="#main-content .col-a"/>    
             <append css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>
             <copy css:if-content="#kml-content-viewlet" css:content="#kml-content-viewlet" css:theme="#main-content .col-b
@@ -64,7 +65,7 @@
 
 
 
-    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-topic')]">
+    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'template-folder_summary_view')]">
     
     
         <rules if-content="//*[@id='portal-column-two']">   

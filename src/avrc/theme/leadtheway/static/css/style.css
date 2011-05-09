@@ -34,6 +34,13 @@ div.managePortletsLink, a.managePortletsFallback{float:right;margin-top:10px;pos
 }
 
 #portal-personaltools dd{background:none repeat scroll 0 0 #393636; margin-top:20px}
+div.listingBar{font-size:100%}
+div.listingBar a{background:none repeat scroll 0 0 #00AEEF;color:#fff;font-weight:bold; border:none}
+div.listingBar a:hover{background:none repeat scroll 0 0 #666}
+
+
+#document-action-kml_download{display:none}
+
 
 html {font-size:100.1%;}
 body {font-size:75%;color:#000;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
