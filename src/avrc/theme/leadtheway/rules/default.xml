@@ -13,6 +13,7 @@
     <drop theme="/html/head/link" />
     <drop theme="/html/head/style" />
     <drop theme="/html/head/script" />
+	<append content='/html/head/base' theme='/html/head' />
     <append  content='/html/head/meta' theme='/html/head' />
     <append  content='/html/head/link | /html/head/style' theme='/html/head' />
     <append  content='/html/head/script' theme='/html/head' />
@@ -39,6 +40,7 @@
     <replace css:content="#content h1.documentFirstHeading" css:theme="#main-content h2"/>
     
     <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), 'template-folder_summary_view')])">
+    <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), 'template-kml-openlayers')])">
         <rules if-content="not(//body[contains(concat(' ', normalize-space(@class), ' '), ' portaltype-event')])">
             <rules if-content="//*[@id='portal-column-two']">   
                 <copy css:content="#parent-fieldname-description" css:theme="#main-content .col-a"/>    
@@ -51,6 +53,7 @@
             <append css:if-content="#viewlet-below-content" css:content="#viewlet-below-content" css:theme="#main-content" />
             <drop css:theme=".grey-box"  />
         </rules>
+    </rules>
     </rules>
 
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'portaltype-event')]">
@@ -67,6 +70,29 @@
 
     <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'template-folder_summary_view')]">
     
+    
+        <rules if-content="//*[@id='portal-column-two']">   
+            <copy css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>  
+            <copy css:content="#portal-column-two" css:theme="#main-content .col-b"/>
+        </rules>
+        
+        <rules if-content="not(//*[@id='portal-column-two'])">   
+            <replace css:content="#parent-fieldname-text" css:theme="#content .col-a"/>
+            <drop css:theme=".col-b" />
+            
+        </rules>
+        <copy css:content="#parent-fieldname-description" css:theme=".grey-box h3"/>
+        <drop css:theme="div#content-core div#parent-fieldname-text" />
+        <rules if-content="not(//*[@id='default-cgmap'])">
+            <copy css:content="div#content-core" css:theme=".grey-box ul" />
+        </rules>
+        <rules if-content="//*[@id='default-cgmap']">
+            <replace css:content="div#default-cgmap" css:theme=".grey-box ul" />
+            <append css:content="div#content div script" css:theme="#main-content .grey-box"/>
+        </rules>
+    </rules>
+
+    <rules if-content="//body[contains(concat(' ', normalize-space(@class), ' '), 'template-kml-openlayers')]">
     
         <rules if-content="//*[@id='portal-column-two']">   
             <copy css:content="#parent-fieldname-text" css:theme="#main-content .col-a"/>  

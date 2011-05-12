@@ -12,11 +12,11 @@
   <!-- Copy over the id/class attributes on the body tag, this is important
 	     for Kupu and per-section styling -->
  	<replace content='/html/head/title' theme='/html/head/title' />
-	<replace content='/html/head/base' theme='/html/head/base' />
 	<!-- Add in the Plone-created CSS and JS in addition to the static ones -->        
     <drop theme="/html/head/link" />
     <drop theme="/html/head/style" />
     <drop theme="/html/head/script" />
+	<append content='/html/head/base' theme='/html/head' />
     <append  content='/html/head/meta' theme='/html/head' />
     <append  content='/html/head/link | /html/head/style' theme='/html/head' />
     <append  content='/html/head/script' theme='/html/head' />
@@ -47,6 +47,7 @@
     <replace css:theme="#steps" css:content="#portal-column-two"/>
 
     <copy css:content="#portal-siteactions" css:theme="#bar" />
+    <append css:content="#portal-personaltools" css:theme="#bar" />
     <rules if-content="//*[@class='documentEditable']">
     	<rules if-content="//li[@id='contentview-view'][contains(@class,'selected')]">
             <prepend css:theme="#main-content" css:content="#edit-bar" css:if-content="#edit-bar" />    	    
