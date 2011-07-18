@@ -212,7 +212,6 @@ em {font-style:italic;}
 .width-150{width:150px;margin-right:25px;}
 .thirds{float:left; width:250px; margin:0px 15px 15px 0px;}
 .documentByLine{display:none;}
-.close{display:none}
 /*More Window (fancy box window for events)*/
 .more-window{width:500px;padding:15px 10px;font-size:1.25em;}
 
@@ -313,6 +312,9 @@ background-image:none; height: auto;padding:0px;line-height:1.5em; font-size:20p
 .section-front-page #footer a{display:block;float:left;margin:140px 30px 0px 30px;}
 
 .section-front-page #footer .media-kit{float:left;width:296px;margin-left:0px;padding:10px 0px 10px 30px;background-position:0px 0px;text-align:left;}
+
+/* breadcrumbs */
+#portal-breadcrumbs {font-size:100%; font-weight: bold}
 
 /*portlet editing*/
 #default-cgmap{width:90%;}
