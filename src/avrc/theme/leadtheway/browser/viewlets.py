@@ -6,6 +6,8 @@ from zope.app.component.hooks import getSite
 import random
 # Apply on everything.
 # Use templates directory to search for templates.
+from Products.CMFCore.utils import getToolByName
+
 grok.templatedir('templates')
 
 class SlideshowViewlet(grok.Viewlet):
@@ -15,18 +17,10 @@ class SlideshowViewlet(grok.Viewlet):
     grok.viewletmanager(IPortalHeader)
 
     
-    def slideshowContainer(self):
-        site = getSite()
-        try:
-            return site.restrictedTraverse('slideshow')
-        except KeyError:
-            return None
-
     def slideshowImages(self):
-        slideshow_container = self.slideshowContainer()
-        if slideshow_container is not None:
-            imageBrains = list(slideshow_container.getFolderContents({'portal_type':'Image'}))
-            random.shuffle(imageBrains)
-        else:
-            imageBrains = []
+        catalog = getToolByName(self.context, 'portal_catalog')
+        portal_url = getToolByName(self.context, "portal_url")
+        slideshow_path = portal_url.getPortalPath() + '/slideshow'
+        imageBrains = list(catalog({'portal_type':'Image','path':slideshow_path}))
+        random.shuffle(imageBrains)
         return imageBrains
