@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='avrc.theme.leadtheway',
       version=version,
@@ -26,10 +26,8 @@ setup(name='avrc.theme.leadtheway',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.xdv',
-          'xdv>=0.4b3',
+          'plone.app.theming',
           'five.grok',
-
           # -*- Extra requirements: -*-
       ],
       entry_points="""

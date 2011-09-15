@@ -1,0 +1,41 @@
+<div tal:attributes="id viewlet/__name__">
+    <div id="slideshow" class="sliderkit">
+        <div class="sliderkit-panels">
+            <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev">
+                <a href="#" title="Previous">
+                    <span>Previous</span>
+                </a>
+            </div>
+            <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next">
+                <a href="#" title="Next">
+                    <span>Next</span>
+                </a>
+            </div>
+            <div tal:repeat="image viewlet/slideshowImages" tal:omit-tag="">
+            <div class="sliderkit-panel" tal:define="first repeat/image/start" tal:attributes="style python:first and 'display:block' or 'display:none'">
+                <img tal:attributes="src python:image.getURL(); alt string:${image/Title}, ${image/Description}" src="" alt="" />
+                <div class="caption">
+                    <div class="would-you" tal:define="male python:'male' in image.Subject; female python:'female' in image.Subject; group python:'group' in image.Subject;">
+                        <h3 tal:attributes="class python:male and 'he-would' or female and 'she-would' or 'they-would'" class="">
+                            <span tal:replace="python:male and 'He' or female and 'She' or group and 'They'" />
+                            <span tal:condition="python:male or female or group" tal:omit-tag="">would.</span> Would you?
+                        </h3>
+                    </div>
+                    <div class="leader-select" >
+                        <div class="info">
+                            <strong tal:content="image/Title">Name of Person</strong>
+                            <br/>
+                            <span tal:replace="image/Description">Job Title</span>
+                        </div>
+                        <div class="zipcode" tal:define="zip92103 python:'92103' in image.Subject; zip92104 python:'92104' in image.Subject">
+                            <span class="highlight" tal:omit-tag="not:zip92103">92103</span>
+                            <br/>
+                            <span class="highlight" tal:omit-tag="not:zip92104">92104</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

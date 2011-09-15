@@ -1,56 +1,53 @@
 <?xml version="1.0"?>
 <object name="portal_css">
 
+ <!-- Set conditions on stylesheets we don't want to pull in -->
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="public.css"
+     />
+
+ <!-- Add new stylesheets -->
+ <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
+
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.theme.leadtheway.static/css/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/style.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
-    expression="request/HTTP_X_XDV | nothing"
     />
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.theme.leadtheway.static/css/jquery.jscrollpane.css" media="screen" rel="stylesheet"
+    expression="python: here.restrictedTraverse('@@portal_context_state').is_portal_root() and request['HTTP_X_THEME_ENABLED']"
+    id="++theme++avrc.theme.leadtheway/theme-css/home.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
-    expression="request/HTTP_X_XDV | nothing"
+    />
+    
+ <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/reset.css" media="" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
     />
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.theme.leadtheway.static/css/reset.css" media="screen" rel="stylesheet"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/sliderkit-core.css" media="screen" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
-    expression="request/HTTP_X_XDV | nothing"
     />
+
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.theme.leadtheway.static/css/sliderkit-core.css" media="screen" rel="stylesheet"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/handheld.css" media="only screen and (max-device-width: 480px)" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
-    expression="request/HTTP_X_XDV | nothing"
     />
-
- <stylesheet title="" authenticated="False" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.theme.leadtheway.static/css/style.css" media="screen" rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    expression="request/HTTP_X_XDV | nothing"
-    />
- <stylesheet title="" applyPrefix="False" authenticated="False"
-    cacheable="True" compression="safe" conditionalcomment="" cookable="True"
-    enabled="False" expression="" id="columns.css" media="screen"
-    rel="stylesheet" rendering="link"/>
-
- <stylesheet title="" authenticated="False" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.theme.leadtheway.static/css/handheld.css" media="only screen and (max-device-width: 480px)" rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    expression="request/HTTP_X_XDV | nothing"
-    />
-
 </object>
