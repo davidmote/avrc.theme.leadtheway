@@ -89,15 +89,12 @@ em {font-style:italic;}
 */
 
 /* Header: Slideshow */
-#header #slideshow{width:980px;height:455px;}
+#header #slideshow{width:780px;height:165px;left:200px}
 #header ul{list-style:none;}
-
 #header .caption {background:url("../theme-images/tagline-bg.png") repeat scroll 0 0 #393636; width:980px;}
 /* Header: Caption */
-#header .caption{margin-top:165px;height:60px;background:#393636;z-index:99999;}
-#home #header .caption{margin-top:0px;}
+#header .caption{margin-top:0px; height:60px;background:#393636;z-index:99999;}
 
-#header .sub-decoration{position:absolute;top:0px; margin-left:200px}
 #header .caption div {float:left;}
 #header .caption .would-you {border-right:2px #fff solid;}
 #header .caption .would-you h3{float:left;width:490px;height:60px;background-image:url(../theme-images/wouldyou.png);text-indent:-9999px;}

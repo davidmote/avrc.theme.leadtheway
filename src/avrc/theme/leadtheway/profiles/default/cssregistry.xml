@@ -20,7 +20,7 @@
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    expression="python: here.restrictedTraverse('@@portal_context_state').is_portal_root() and request['HTTP_X_THEME_ENABLED']"
+    expression="python: here.restrictedTraverse('@@plone_context_state').is_portal_root() and request['HTTP_X_THEME_ENABLED']"
     id="++theme++avrc.theme.leadtheway/theme-css/home.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"

@@ -22,6 +22,9 @@ class SlideshowViewlet(grok.Viewlet):
         except KeyError:
             return None
 
+    def isHomePage(self):
+        return self.context.restrictedTraverse('@@plone_context_state').is_portal_root()
+        
     def slideshowImages(self):
         slideshow_container = self.slideshowContainer()
         if slideshow_container is not None:
@@ -30,3 +33,12 @@ class SlideshowViewlet(grok.Viewlet):
         else:
             imageBrains = []
         return imageBrains
+        
+        
+    def mosaicImages(self):
+        theme_path = '++theme++avrc.theme.leadtheway/theme-mosaic'
+        theme_dir = self.context.restrictedTraverse(theme_path)
+        rslts = []
+        for image in theme_dir.listDirectory():
+            rslts.append(theme_path + '/' + image)
+        return rslts

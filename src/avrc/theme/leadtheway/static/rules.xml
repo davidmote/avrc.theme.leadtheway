@@ -35,12 +35,13 @@
         <copy attributes="id dir" css:content="body" css:theme="body" />
         
         <copy attributes="href title accesskey" css:content="a#portal-logo" css:theme="a#portal-logo" />
-
+        
         <replace css:content="#slideshow" css:theme="#slideshow" />
 
         <rules if="$home_page">
             <replace css:content="#portal-column-two" css:theme="#steps" />
         </rules>
+        
         <replace css:content='.portletNavigationTree dd' css:theme-children='.portletNavigationTree' />
         <drop css:content='a.navTreeFolderish > img' />
 
