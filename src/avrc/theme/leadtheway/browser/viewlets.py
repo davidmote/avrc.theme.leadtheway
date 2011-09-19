@@ -4,6 +4,7 @@ from plone.app.layout.viewlets.interfaces import IPortalHeader
 from zope.interface import Interface
 from zope.app.component.hooks import getSite
 import random
+from avrc.theme.leadtheway.interfaces import ILeadthewayTheme
 # Apply on everything.
 # Use templates directory to search for templates.
 grok.templatedir('templates')
@@ -12,9 +13,10 @@ class SlideshowViewlet(grok.Viewlet):
     grok.name('leadtheway.SlideshowViewlet')
     grok.context(Interface)
     grok.require('zope2.View')
+    grok.layer(ILeadthewayTheme)
     grok.viewletmanager(IPortalHeader)
 
-    
+
     def slideshowContainer(self):
         site = getSite()
         try:

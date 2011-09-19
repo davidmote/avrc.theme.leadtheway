@@ -25,11 +25,19 @@
     rendering="link"
     applyPrefix="True"
     />
-    
+
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
     id="++theme++avrc.theme.leadtheway/theme-css/reset.css" media="" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+    
+ <stylesheet title="" authenticated="True" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression=""
+    id="++theme++avrc.theme.leadtheway/theme-css/edit-screen.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />

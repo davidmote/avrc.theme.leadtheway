@@ -28,11 +28,13 @@ setup(name='avrc.theme.leadtheway',
           'setuptools',
           'plone.app.theming',
           'five.grok',
-          # -*- Extra requirements: -*-
       ],
+      extras_require={
+          'test': ['plone.app.testing']
+      },
+# ent
       entry_points="""
       # -*- Entry points: -*-
-
       [z3c.autoinclude.plugin]
       target = plone
       """,
