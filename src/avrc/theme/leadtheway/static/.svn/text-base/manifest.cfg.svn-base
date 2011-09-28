@@ -1,6 +1,0 @@
-[theme]
-title = My theme
-description = A demo theme from the plone.app.theming README
-
-[theme:parameters]
-ajax_load = python: 'ajax_load' in request.form
