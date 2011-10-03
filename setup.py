@@ -6,8 +6,6 @@ version = '0.2'
 setup(name='avrc.theme.leadtheway',
       version=version,
       description="Diazo theme for the Lead The Way Campaign",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
@@ -15,9 +13,9 @@ setup(name='avrc.theme.leadtheway',
         "Programming Language :: Python",
         ],
       keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      author='BEAST Core Development Team',
+      author_email='beast@ucsd.edu',
+      url='https://github.com/beastcore/avrc.theme.leadtheway',
       license='GPL',
       packages=find_packages('src', exclude=['ez_setup']),
       package_dir={'':'src'},
