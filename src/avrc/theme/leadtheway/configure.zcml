@@ -8,7 +8,7 @@
     i18n_domain="avrc.theme.leadtheway">
 
         <includeDependencies package="." />
-        <include package="five.grok" />
+        
         <grok:grok package=".browser" />
 
         <plone:static
