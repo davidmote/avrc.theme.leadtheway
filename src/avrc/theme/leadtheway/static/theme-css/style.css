@@ -406,3 +406,43 @@ div.overlay .formControls a {
 }
 
 /* @end */
+
+dl.portalMessage {
+    clear: none;
+}
+
+#bar #portal-personaltools {
+    margin: 0px;
+    padding: 3px;
+    float:right;
+}
+
+.pb-ajax, .pb-image, .overlay iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#fieldset-openid-login label, #login-form label {
+    display: inline-block;
+    margin-right: 0.5em;
+    padding-top: 0.2em;
+    text-align: right;
+    width: 10em;
+}
+
+.field {
+    clear: both;
+    margin-bottom: 1em;
+}
+
+div.formControls {
+    margin: 1em;
+}
+
+#fieldset-openid-login input, #login-form input {
+    font-size: 150%;
+}
+
+#fieldset-openid-login .formControls input, #login-form .formControls input {
+    margin-left: 0.25em;
+}
