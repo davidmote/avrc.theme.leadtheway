@@ -25,7 +25,8 @@ class SlideshowViewlet(grok.Viewlet):
             return None
 
     def isHomePage(self):
-        return self.context.restrictedTraverse('@@plone_context_state').is_portal_root()
+        context_state = self.context.restrictedTraverse('@@plone_context_state')
+        return context_state.is_portal_root() and context_state.is_view_template()
         
     def slideshowImages(self):
         slideshow_container = self.slideshowContainer()

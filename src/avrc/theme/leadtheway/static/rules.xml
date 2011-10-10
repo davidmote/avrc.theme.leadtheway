@@ -6,11 +6,12 @@
 
     <xsl:variable name="wrapped" css:select="#visual-portal-wrapper"/>
     <xsl:variable name="columns" css:select="#portal-column-two"/>
-    <xsl:variable name="controlpanel" css:select=".portaltype-plone-site"/>
-
+<!--     <xsl:variable name="controlpanel" css:select=".portaltype-plone-site"/>
+ -->
     <!-- The default theme, used for standard Plone web pages -->
-    <theme href="./default.html" if="$controlpanel" />
-    <theme href="./home.html" if="$home_page" />
+<!--     <theme href="./default.html" if="$controlpanel" />
+ -->    <theme href="./home.html" if="$home_page" />
+    
     <theme href="./default.html" />
     <notheme if-content="not($wrapped)" />
     <notheme if="$ajax_load" />
