@@ -421,7 +421,7 @@ dl.portalMessage {
     min-height: 20em;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    width: auto;
     overflow-y: visible;
 }
 
