@@ -39,7 +39,7 @@ class TestSetup(unittest.TestCase):
 
         self.assertTrue(settings.parameterExpressions.has_key('home_page'))
         
-        self.assertEqual(settings.parameterExpressions['home_page'], "python: context_state.is_portal_root()")
+        self.assertEqual(settings.parameterExpressions['home_page'], "python: context_state.is_portal_root() and context_state.is_view_template()")
 
 
     def test_css_registry_configured(self):

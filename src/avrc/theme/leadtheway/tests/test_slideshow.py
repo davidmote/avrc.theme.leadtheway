@@ -37,7 +37,7 @@ class TestViewlet(unittest.TestCase):
         self.assertEquals(portal.restrictedTraverse('slideshow'), self.homepage_viewlet.slideshowContainer())
 
     def test_home_check(self):
-        self.assertTrue(self.homepage_viewlet.isHomePage())
+        self.assertTrue(self.homepage_viewlet.isHomePage(), 'This fails because the testing sets the default view to folder_listing')
         self.assertFalse(self.subpage_viewlet.isHomePage())
 
     def test_slideshow_images(self):

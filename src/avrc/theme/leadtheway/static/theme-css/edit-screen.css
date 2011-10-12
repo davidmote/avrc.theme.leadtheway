@@ -118,7 +118,7 @@ margin: 1em 0;
 font-size: 80%;
 border: 1px solid #996;
 background-color: #ffffe3;
-clear:both;
+clear:right;
 }
 dl.portalMessage a,
 #content dl.portalMessage a {
