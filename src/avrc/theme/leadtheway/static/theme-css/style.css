@@ -449,3 +449,7 @@ div.formControls {
 #fieldset-openid-login .formControls input, #login-form .formControls input {
     margin-left: 0.25em;
 }
+
+.olLayerGoogleCopyright {
+    display: none;
+}

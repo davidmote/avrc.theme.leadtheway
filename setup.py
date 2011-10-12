@@ -25,6 +25,7 @@ setup(
         'setuptools',
         'five.grok',
         'plone.app.theming',
+        'plone.memoize',
         ],
     extras_require=dict(
         test=['plone.app.testing'],
