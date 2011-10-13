@@ -1,0 +1,7 @@
+<layers>
+    <!-- Enable the Theme layer when installed -->
+    <layer
+        name="avrc.theme.leadtheway"
+        interface="avrc.theme.leadtheway.interfaces.ILeadthewayTheme"
+        />
+</layers>

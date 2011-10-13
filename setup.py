@@ -1,41 +1,37 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.3.0'
 
-setup(name='avrc.theme.leadtheway',
-      version=version,
-      description="Diazo theme for the Lead The Way Campaign",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?:action=list_classifiers
-      classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
+setup(
+    name='avrc.theme.leadtheway',
+    version=version,
+    description="Diazo theme for the Lead The Way Campaign",
+    classifiers=[
+        'Framework :: Plone',
+        'Programming Language :: Python',
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
-      license='GPL',
-      packages=find_packages('src', exclude=['ez_setup']),
-      package_dir={'':'src'},
-      namespace_packages=['avrc', 'avrc.theme'],
-      include_package_data=True,
-      zip_safe=False,
-      install_requires=[
-          'setuptools',
-          'collective.xdv',
-          'xdv>=0.4b3',
-          'five.grok',
-
-          # -*- Extra requirements: -*-
-      ],
-      entry_points="""
-      # -*- Entry points: -*-
-
-      [z3c.autoinclude.plugin]
-      target = plone
-      """,
-      )
+    keywords='',
+    author='BEAST Core Development Team',
+    author_email='beast@ucsd.edu',
+    url='https://github.com/beastcore/avrc.theme.leadtheway',
+    license='GPL',
+    packages=find_packages('src', exclude=['ez_setup']),
+    package_dir={'':'src'},
+    namespace_packages=['avrc', 'avrc.theme'],
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=[
+        'setuptools',
+        'five.grok',
+        'plone.app.theming',
+        'plone.memoize',
+        ],
+    extras_require=dict(
+        test=['plone.app.testing'],
+        ),
+    entry_points="""
+    [z3c.autoinclude.plugin]
+    target = plone
+    """,
+    )
